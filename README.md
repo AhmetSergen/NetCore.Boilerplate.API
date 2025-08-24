@@ -1,5 +1,12 @@
-# NetCore.Boilerplate.API
-.Net Core Boilerplate API for windows
+# NetCore.Boilerplate.API 
+.Net Core Boilerplate API for windows with simple controller example usages.
+
+You can send requests to API using swagger interface once you run API
+https://localhost:5001/swagger
+
+# Run API
+    cd NetCore.Boilerplate.API 
+    dotnet run
 
 # Codes Used When Creating The Project
 
@@ -15,6 +22,7 @@
 
 ## Create a solution & Web API project
 *The template already includes WeatherForecast + Swagger + HTTPS dev cert usage.*
+    
     dotnet new sln -n NetCore.Boilerplate.API 
 
 ### Controller-based Web API template with OpenAPI (Swagger)
@@ -25,5 +33,5 @@
     dotnet dev-certs https --trust
 
 ## Run API
-    cd MyApi
+    cd NetCore.Boilerplate.API 
     dotnet run
