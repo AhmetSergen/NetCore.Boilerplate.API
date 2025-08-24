@@ -8,7 +8,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Enable CORS (Enables call from browser app)
-// !!! Remove to block CORS
 var AllowAnyFrontend = "_allowAnyFrontend";
 builder.Services.AddCors(options =>
 {
@@ -20,7 +19,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.UseCors(AllowAnyFrontend);
+app.UseCors(AllowAnyFrontend); // Enable CORS (!!! Remove to block CORS)
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) // Use swagger only in development environment.
